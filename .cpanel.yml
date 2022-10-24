@@ -1,0 +1,17 @@
+---
+deployment:
+  task:
+  
+    - export DEPLOYPATH=/home3/sabimael/public_html/
+    - /bin/cp /index.html $DEPLOYPATH
+    - /bin/cp /main.css $DEPLOYPATH
+    - /bin/cp /main.js $DEPLOYPATH
+    - /bin/rsync -av ./assets/ $DEPLOYPATH
+    - /bin/rsync -av ./components/ $DEPLOYPATH
+    - /bin/rsync -av ./pages/ $DEPLOYPATH
+    - /bin/rsync -av ./scripts/ $DEPLOYPATH
+    - /bin/rsync -av ./styles/ $DEPLOYPATH
+
+  
+
+
