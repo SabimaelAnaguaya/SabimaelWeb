@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Sabimael, desarrollador web, frontend developer,diseño web, web design, desarrollo web, Maguaya, creación páginas web, página web"/>
+    <meta name="author" content="Sabimael">
+    <meta name="description" content="Hola, mi nombre es Sabimael Añaguaya y soy desarrollador front end auto-didacta, disfruto realizandopaginas web funcionales y agradables">
+    <meta name="copyright" content="Sabimael Añaguaya" />
+    <link rel="canonical" href="https://sabimael.com"/>
+    <meta name="robots" content="follow"/>
+    <meta name="robots" content="index"/>
+
+    <link rel="icon" type="image/svg" href="./assets/icons/logo.svg"/>
+    <link rel="stylesheet" href="main.css">
+    <title>Sabimael | Web Developer</title>
+</head>
+
+<body>
+    <div class="content_loader">
+        <img src="./assets/icons/logo.svg" alt="">
+    </div>
+    <header class="container">
+        <nav class="navbar">
+            <my-logo 
+                img="./assets/icons/logo.svg"
+                title="Sabimael"
+                subtitle="Web Developer">
+            </my-logo>
+            <sa-navlist>
+                    <li slot="list">
+                        <a class="list-link" href="./index.html">INICIO</a>
+                    </li>
+                    <li slot="list">
+                        <a class="list-link" href="./pages/proyectos.html">PROYECTOS</a>
+                    </li>
+                    <li slot="list">
+                        <a class="list-link" href="./pages/MAGUAYA/maguaya.html">SERVICIO</a>
+                    </li>
+                    <li slot="list">
+                        <a class="list-link contactame" href="https://api.whatsapp.com/send?phone=59160636949&text=Hola!,Sabimael me gustaria saber mas sobre tu trabajo">CONTACTAME</a>
+                    </li>
+                
+            </sa-navlist>
+        </nav>
+    </header>
+
+
+    <main class="main-container">
+        <section class="hero-container">
+
+            <article class="introduce-container">
+
+                <div class="introduce-content">
+                    <h3>Hola, <span class="color-font">yo soy</span></h3>
+                    <h1>Sabimael Añaguaya</h1>
+                    <h3>Front End Developer</h3>
+                    <p>Soy un desarrollador front end auto-didacta, quien disfruta realizando páginas web funcionales y agradables a la vista. Cuentame como podria ayudarte</p>
+                    
+                </div>
+
+                <button>Hablemos</button>
+
+                <div class="social-container">
+                    <h2>Contactame</h2>
+                    
+                    <a class="jump" href="https://api.whatsapp.com/send?phone=59160636949&text=Hola!,Sabimael me gustaria saber mas sobre tu trabajo">
+                        <bg-icon img="./assets/icons/whatsapp.svg" ></bg-icon>
+                    </a>
+                    <a class="jump1" href="https://github.com/SabimaelAnaguaya">
+                        <bg-icon img="./assets/icons/github.svg" ></bg-icon>
+                    </a>
+                    <a class="jump2" href="https://www.linkedin.com/in/sabimael">
+                        <bg-icon img="./assets/icons/linkedin.svg" ></bg-icon>
+                    </a>
+                    <a class="jump3" href="mailto:sabimael.anaguaya@gmail.com">
+                        <bg-icon img="./assets/icons/mail.svg" ></bg-icon>
+                    </a>
+                    
+                </div>
+            </article>
+            <picture class="image-perfil">
+                <img-perfil img="./assets/images/photo-perfil.png"></img-perfil>
+            </picture>
+        </section>
+       
+        <section class="services-container">
+            <h4>Mis <span class="color-font">Servicios</span></h4>
+            <h2>What I Do</h2>
+            <section class="cards-service-container">
+                <card-serv
+                    img = "./assets/icons/webdevelopericon.svg"
+                    title="Web Developer"
+                >Maquetación de páginas Web, html, css y wordpress</card-serv>
+                <card-serv
+                    img="./assets/icons/graphic.svg"
+                    title="Graphic Designer"
+                >Diseño de logos, ilustraciones</card-serv>
+                <card-serv 
+                    img="./assets/icons/uxui.svg"
+                    title="UX/UI Designer"
+                >Diseños unicos y funcionales</card-serv>
+            </section>
+        </section>
+
+        <section class="projects-container">
+            <h2>Proyectos <span class="color-font">recientes</span></h2>
+            
+            <div id="carousel" class="carousel">
+
+                <div id='iten_1' class="hideLeft">
+                    <img src="./assets/images/BurgosMarka.png">
+                </div>
+         
+                <div id='item_2' class="prevLeftSecond">
+                    <img src="./assets/images/appClima.png">
+                </div>
+         
+               <div id='item_3' class="prev">
+                 <img src="./assets/images/clonNintendo.png">
+               </div>
+         
+               <div id='item_4' class="selected">
+                 <img src="./assets/images/centroInfantil.png">
+               </div>
+         
+               <div id='item_5' class="next">
+                 <img src="./assets/images/mobileFirst.png">
+               </div>
+         
+               <div id='item_6' class="nextRightSecond">
+                 <img src="./assets/images/portafolioPlantilla.png">
+               </div>
+         
+               <div id='item_7' class="hideRight">
+                 <img src="./assets/images/dls-web.png">
+               </div>
+         
+               <div id='item_8' class="hideRight">
+                 <img src="./assets/images/Instituto.png">
+               </div>
+         
+             </div>
+         
+             <div class="buttons">
+               <button id="prev">Anterior</button>
+               <button><a href="./pages/proyectos.html">Más</a></button>
+               <button id="next">Siguiente</button>
+             </div>
+        </section>
+    </main>
+
+
+    <footer class="footer-container">
+        <section >
+            <div class="resume">
+                <my-logo class="footer-logo"
+                img="./assets/icons/logo.svg"
+                title="Sabimael"
+                subtitle="Web Developer"
+                ></my-logo>
+                <div class="foot-nav">
+                    <h3>CONTACTOS</h3>
+                    <p>
+                        <a href="">
+                            Agencia de Desarrollo Web
+                        </a>
+                    </p>
+                    <a href="https://api.whatsapp.com/send?phone=59160636949&text=Hola!,Sabimael me gustaria saber mas sobre tu trabajo">(+591) 60636949</a>
+                    <a href="mailto:sabimael.anaguaya@gmail.com" >hola@maguaya.com</a>
+                    <p>Bolivia</p>
+                </div>
+
+                <div class="foot-nav">
+                    <h3>SERVICIOS</h3>
+                    <a href="./pages/MAGUAYA/maguaya.html">Web Wordpress</a>
+                    <a href="./pages/MAGUAYA/maguaya.html">Web Personalizado</a>
+                    <a href="./pages/MAGUAYA/maguaya.html">Mantenimiento</a>
+                </div>
+
+            </div>
+        </section>
+        <section class="copyright">
+            <p>© Copytight Sabimael Añaguaya 2022 All Rights Reserved</p>
+        </section>
+    </footer>
+    <script src="./scripts/carousel.js"></script>
+    <script src="./scripts/observador.js"></script>
+    <script src="./main.js" type="module"></script>
+</body>
+</html>
